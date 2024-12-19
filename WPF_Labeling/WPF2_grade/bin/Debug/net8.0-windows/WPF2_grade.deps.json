@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WPF2_grade/1.0.0": {
+        "runtime": {
+          "WPF2_grade.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPF2_grade/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

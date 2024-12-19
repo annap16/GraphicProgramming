@@ -1,0 +1,16 @@
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\bin\Debug\net6.0-windows\WinFormsHamsterGame.exe
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\bin\Debug\net6.0-windows\WinFormsHamsterGame.deps.json
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\bin\Debug\net6.0-windows\WinFormsHamsterGame.runtimeconfig.json
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\bin\Debug\net6.0-windows\WinFormsHamsterGame.dll
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\bin\Debug\net6.0-windows\WinFormsHamsterGame.pdb
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\obj\Debug\net6.0-windows\WinFormsHamsterGame.HamsterGame.resources
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\obj\Debug\net6.0-windows\WinFormsHamsterGame.csproj.GenerateResource.cache
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\obj\Debug\net6.0-windows\WinFormsHamsterGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\obj\Debug\net6.0-windows\WinFormsHamsterGame.AssemblyInfoInputs.cache
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\obj\Debug\net6.0-windows\WinFormsHamsterGame.AssemblyInfo.cs
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\obj\Debug\net6.0-windows\WinFormsHamsterGame.csproj.CoreCompileInputs.cache
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\obj\Debug\net6.0-windows\WinFormsHamsterGame.dll
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\obj\Debug\net6.0-windows\refint\WinFormsHamsterGame.dll
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\obj\Debug\net6.0-windows\WinFormsHamsterGame.pdb
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\obj\Debug\net6.0-windows\WinFormsHamsterGame.genruntimeconfig.cache
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsHamsterGame\WinFormsHamsterGame\obj\Debug\net6.0-windows\ref\WinFormsHamsterGame.dll

@@ -1,0 +1,16 @@
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\bin\Debug\net6.0-windows\WinFormsCalendar.exe
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\bin\Debug\net6.0-windows\WinFormsCalendar.deps.json
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\bin\Debug\net6.0-windows\WinFormsCalendar.runtimeconfig.json
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\bin\Debug\net6.0-windows\WinFormsCalendar.dll
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\bin\Debug\net6.0-windows\WinFormsCalendar.pdb
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\obj\Debug\net6.0-windows\WinFormsCalendar.Form1.resources
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\obj\Debug\net6.0-windows\WinFormsCalendar.csproj.GenerateResource.cache
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\obj\Debug\net6.0-windows\WinFormsCalendar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\obj\Debug\net6.0-windows\WinFormsCalendar.AssemblyInfoInputs.cache
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\obj\Debug\net6.0-windows\WinFormsCalendar.AssemblyInfo.cs
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\obj\Debug\net6.0-windows\WinFormsCalendar.csproj.CoreCompileInputs.cache
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\obj\Debug\net6.0-windows\WinFormsCalendar.dll
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\obj\Debug\net6.0-windows\refint\WinFormsCalendar.dll
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\obj\Debug\net6.0-windows\WinFormsCalendar.pdb
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\obj\Debug\net6.0-windows\WinFormsCalendar.genruntimeconfig.cache
+C:\Users\annap\Desktop\Studia\Semestr 4\Programowanie w Środowisku Graficznym\WinFormsCalendar\WinFormsCalendar\obj\Debug\net6.0-windows\ref\WinFormsCalendar.dll

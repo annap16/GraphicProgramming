@@ -1,0 +1,90 @@
+﻿<Window x:Class="WPF2_grade.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF2_grade"
+        mc:Ignorable="d"
+        Title="AI Label Tool" Height="500" Width="1000">
+    <Window.Resources>
+        <local:CaptionConverter x:Key="CaptionConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="File..">
+                    <MenuItem Header="Load Dataset" Click="MenuItem_Click"/>
+                </MenuItem>
+                <MenuItem Header="Labeling">
+                    <MenuItem Header="Start Labeling" IsEnabled="False"/>
+                </MenuItem>
+                
+            </Menu>
+        </DockPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.33*"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="0.33*"/>
+                <ColumnDefinition Width="0.33*"/>
+            </Grid.ColumnDefinitions>
+            <ListView x:Name="pomList" Grid.Column="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Grid.Row="0" Source="{Binding}" Height="120" Width="120" Margin="5"/>
+                            <Label Grid.Row="1" Content="{Binding Path=., Converter={StaticResource CaptionConverter}}"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.5*"/>
+                </Grid.RowDefinitions>
+                <DockPanel Grid.Row="0" LastChildFill="False">
+                    <Button Name="arrowButton" DockPanel.Dock="Bottom" Margin="5" Height="30" Width="30" Click="arrowButton_Click">
+                        <Image Source="{Binding arrowPath}" Stretch="Fill"/>
+                    </Button>
+                </DockPanel>
+                <DockPanel Grid.Row="1" LastChildFill="False">
+                    <Button Name="deleteButton" DockPanel.Dock="Top" Margin="5" Height="30" Width="30" Click="deleteButton_Click">
+                        <Image Source="{Binding deletePath}" Stretch="Fill"/>
+                    </Button>
+                </DockPanel>
+            </Grid>
+            <GroupBox Grid.Row="1" Grid.Column="2" Header="Chosen Item">
+                <ListView Name="pathsList" ItemsSource="{Binding chosenPaths}" SelectionChanged="SelectionChangedEvenet">
+                </ListView>
+            </GroupBox>
+            <StackPanel  Name="imageStackPanel" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5">
+                
+                
+            </StackPanel>
+
+
+
+
+
+        </Grid>
+        <DockPanel Grid.Row="2" LastChildFill="False">
+            <Button Name="startLabelingButton" DockPanel.Dock="Right"  Content="Start Labeling" Height="30" Width="80" Margin="5" IsEnabled="False" Click="startLabelingButtonClick">
+            </Button>
+        </DockPanel>
+    </Grid>
+</Window>

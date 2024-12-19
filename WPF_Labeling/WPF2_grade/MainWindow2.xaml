@@ -1,0 +1,118 @@
+﻿<Window x:Class="WPF2_grade.SecondWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF2_grade"
+        mc:Ignorable="d"
+        Title="AI Label Tool - Labeling step" Height="800" Width="1400" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="800"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <ListView Name="PicturesListView" Grid.Row="0" Grid.Column="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding photoPaths}" SelectionChanged="LabelsListView_SelectionChanged">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding }" Height="60" Width="60" Margin="5"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Canvas Name="Canva" Grid.Column="1" MouseMove="Canvas_MouseMove" MouseUp="Canvas_MouseUp" MouseDown="Canvas_MouseDown">
+            <Image Name="ImageInCanva" Source="{Binding ElementName=PicturesListView, Path=SelectedItem}" Stretch="Uniform" Width="{Binding ActualWidth, ElementName=Canva}" Height="{Binding ActualHeight, ElementName=Canva}"/>
+        </Canvas>
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <GroupBox Grid.Row="0">
+            <GroupBox.Header>
+                Labels Settings
+            </GroupBox.Header>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.66*"/>
+                        <ColumnDefinition Width="0.33*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Name="LabelInput" Grid.Column="0" Margin="5"></TextBox>
+                    <Button Grid.Column="1" Margin="5" Content="Add Label" Click="Button_Click"/>
+                </Grid>
+                <ListView Name="LabelsListView" Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Orientation="Horizontal" />
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Border CornerRadius="5" Background="{Binding itemColor}" MinHeight="35" MinWidth="15">
+                                    <TextBox KeyDown="LabelTextBox_KeyDown" Name="LabelTextBox" Text="{Binding text, Mode=TwoWay}" VerticalAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" IsHitTestVisible="False" Focusable="False" ></TextBox>
+                                    <Border.ContextMenu>
+                                        <ContextMenu>
+                                            <MenuItem Header="Remove" Click="MenuItem_Click"/>
+                                            <MenuItem Header="Edit" Click="MenuItem_Click_1"/>
+                                        </ContextMenu>
+                                    </Border.ContextMenu>
+                                </Border>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </Grid>
+        </GroupBox>
+            <GroupBox Grid.Row="1">
+                <GroupBox.Header>
+                    Export Settings
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="0.5*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                        </Grid.ColumnDefinitions>
+                        <DockPanel  Grid.Column="0" LastChildFill="False">
+                            <Label DockPanel.Dock="Left" Content="Export:"/>
+                        </DockPanel>
+                        <DockPanel Grid.Column="1" LastChildFill="False">
+                            <Button Name="ChooseFolderButton" DockPanel.Dock="Right" Content="Choose folder" Padding="5" Click="ChooseFolderButton_Click" Margin="5"/>
+                        </DockPanel>
+                    </Grid>
+                    <TextBox Name="ChosenFolderName" Grid.Row="1">
+                        
+                    </TextBox>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <DockPanel  Grid.Column="0" Grid.Row="1">
+            <Button Name="prevButton" DockPanel.Dock="Left" Content="Previous Image" IsEnabled="False" Height="40" Width="90" Click="prevButton_Click" />
+        </DockPanel>
+        <DockPanel Grid.Column="1" Grid.Row="1">
+            <Button Name="nextButton" DockPanel.Dock="Right" Content="Next Image" IsEnabled="False" Height="40" Width="90" Click="nextButton_Click"/>
+        </DockPanel>
+        <DockPanel Grid.Column="2" Grid.Row="1">
+            <Button Name ="FinishLabelingButton" Content="Finish Labeling" Height="40" Width="90" Click='FinishLabelingButton_Click'/>
+        </DockPanel>
+    </Grid>
+</Window>
