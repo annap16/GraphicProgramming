@@ -1,7 +1,7 @@
 
 # Choose your language version
-- [Polski](#habit-tracker-pol)
-- [English](#habit-tracker-en)
+- [Polski](#pwsg-pol)
+- [English](#pwsg-en)
 
 ---
 # Projekty z kursu Programowanie w Środowisku Graficznym <a name="pwsg-pol"></a>
