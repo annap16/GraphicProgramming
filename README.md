@@ -1,4 +1,10 @@
-# Projekty z kursu Programowanie w Środowisku Graficznym
+
+# Choose your language version
+- [Polski](#habit-tracker-pol)
+- [English](#habit-tracker-en)
+
+---
+# Projekty z kursu Programowanie w Środowisku Graficznym <a name="pwsg-pol"></a>
 
 Repozytorium zawiera projekty stworzone podczas kursu **Programowanie w Środowisku Graficznym**, który realizowałam w ramach studiów. Projekty zostały zaimplementowane w trzech technologiach:
 - **WinAPI**
@@ -19,7 +25,7 @@ Gra stworzona w technologii WinForms, której celem jest klikanie podświetlane 
 ### 4. **WinAPI – Aplikacja wspomagająca prowadzenie prezentacji**
 Aplikacja stworzona w WinAPI, która pomaga w prowadzeniu prezentacji. Umożliwia podświetlanie kursora za pomocą półprzezroczystego okręgu, który podąża za kursorem. Użytkownik może zmieniać jego wygląd, np. sprawić, by pulsował lub zmieniać jego kolor, co pozwala na lepsze podkreślenie wskazywanych elementów podczas prezentacji.
 
-# Projects from the Graphic Environment Programming Course
+# Projects from the Graphic Environment Programming Course  <a name="pwsg-en"></a>
 
 This repository contains projects created during the **Graphic Environment Programming** course, which I completed as part of my studies. The projects were implemented using three technologies:
 - **WinAPI**
